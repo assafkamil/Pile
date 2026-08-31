@@ -30,6 +30,17 @@ Decision records enter the workflow at three points:
    the record) and what to attach — every decision anchors the files it
    shapes (`anchors`), cites what was read (`sources`), and links the records
    it rests on (`relatedConceptIds`).
+
+   **Elicit rationale for decision-shaped instructions.** An instruction that
+   encodes a decision made out-of-loop — it departs from the default path, it
+   invisibly constrains future work, or it touches a loaded record — gets one
+   hypothesis-shaped question back ("this avoids X; is that because Y?")
+   before its record is written. Guards: deletion-test before interrupting
+   (only ask where a wrong guess misleads a future reader); query the bundle
+   first (never re-ask what a record answers); ask before implementing only
+   when the departure is hard to reverse, else elicit at finalize; a rationale
+   the human did not give enters only as a flagged assumption, never as the
+   decision's why; every elicited record names who answered and when.
 3. **During review — read.** Judge changes against recorded decisions instead
    of re-litigating them. Review pushback that genuinely changes a decision
    supersedes the record in the same cycle (`kb_supersede`) — never edit or
