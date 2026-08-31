@@ -1,3 +1,4 @@
 {"at":"2026-08-31T05:53:12.232Z","by":"assafk","operation":"write","conceptId":"fact.storage-model-markdown-on-disk"}
 {"at":"2026-08-31T05:53:23.181Z","by":"assafk","operation":"write","conceptId":"constraint.install-needs-legacy-peer-deps"}
 {"at":"2026-08-31T06:59:56.626Z","by":"assafk","operation":"write","conceptId":"decision.adr-discipline-convention-first"}
+{"at":"2026-08-31T16:22:38.341Z","by":"assafk","operation":"write","conceptId":"decision.validate-gated-capture-not"}

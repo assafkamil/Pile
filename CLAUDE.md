@@ -35,8 +35,10 @@ Decision records enter the workflow at three points:
    supersedes the record in the same cycle (`kb_supersede`) — never edit or
    delete a record whose meaning changed.
 
-A claim with no source is an `assumption`, not a `fact`. `strauss-kb validate`
-must return `[]` before pushing KB changes.
+KB integrity is enforced at push: a pre-push hook runs `strauss-kb validate`
+and blocks on anything but `[]` (one-time setup:
+`git config core.hooksPath .githooks`).
 
-This discipline is convention, not enforcement: nothing mechanically blocks a
-turn or a commit on it (recorded honestly — no hook gate exists here).
+Capture itself is still convention, not enforcement: nothing mechanically
+blocks a turn on a missing decision record (recorded honestly — the why-gate
+is deferred until capture measurably drops).
