@@ -2,3 +2,7 @@
 {"at":"2026-08-31T05:53:23.181Z","by":"assafk","operation":"write","conceptId":"constraint.install-needs-legacy-peer-deps"}
 {"at":"2026-08-31T06:59:56.626Z","by":"assafk","operation":"write","conceptId":"decision.adr-discipline-convention-first"}
 {"at":"2026-08-31T16:22:38.341Z","by":"assafk","operation":"write","conceptId":"decision.validate-gated-capture-not"}
+{"at":"2026-08-31T19:55:47.450Z","by":"assafk","operation":"write","conceptId":"decision.sync-files-canonical"}
+{"at":"2026-08-31T19:59:49.792Z","by":"assafk","operation":"write","conceptId":"decision.sync-folder-syncer-compatible"}
+{"at":"2026-08-31T19:59:50.000Z","by":"assafk","operation":"write","conceptId":"open-question.conflict-merge-granularity"}
+{"at":"2026-08-31T19:59:50.351Z","by":"assafk","operation":"overwrite","conceptId":"decision.none"}
