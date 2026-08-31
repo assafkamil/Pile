@@ -1,0 +1,13 @@
+#!/bin/sh
+# Block pushes when the knowledge base has broken cross-record pointers.
+# Setup (once per clone): git config core.hooksPath .githooks
+if ! command -v strauss-kb >/dev/null 2>&1; then
+  echo "pre-push: strauss-kb CLI not found; skipping KB validation" >&2
+  exit 0
+fi
+out=$(strauss-kb --bundle .strauss/kb validate 2>&1)
+if [ "$out" != "[]" ]; then
+  echo "pre-push: strauss-kb validate failed — fix the KB before pushing:" >&2
+  echo "$out" >&2
+  exit 1
+fi
