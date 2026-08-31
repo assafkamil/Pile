@@ -24,9 +24,12 @@ Decision records enter the workflow at three points:
    live, not written up afterwards.
 2. **At implementation boundaries — write.** Finishing a subtask requires
    either a decision record (`kb_write_decision`) or an explicit
-   `kb_no_decision` — never silence. Selectivity per the `recording-decisions`
-   skill: record only what a later reader could not reconstruct from the diff;
-   what was rejected and why is the part that earns the record.
+   `kb_no_decision` — never silence. ALWAYS load the `recording-decisions`
+   skill before writing one: it owns selectivity (record only what a later
+   reader could not reconstruct from the diff; the rejected alternative earns
+   the record) and what to attach — every decision anchors the files it
+   shapes (`anchors`), cites what was read (`sources`), and links the records
+   it rests on (`relatedConceptIds`).
 3. **During review — read.** Judge changes against recorded decisions instead
    of re-litigating them. Review pushback that genuinely changes a decision
    supersedes the record in the same cycle (`kb_supersede`) — never edit or
